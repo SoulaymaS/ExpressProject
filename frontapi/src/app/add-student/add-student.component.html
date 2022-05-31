@@ -1,0 +1,18 @@
+<div class="container">
+    <h3> Add Student</h3>
+    <form #f="ngForm" (ngSubmit)="addStudent(f.value)">
+        <label for="name">Name</label>
+        <input ngModel required type="text" class="form-control" id="name" name="name">
+
+        <label for="age">Age</label>
+        <input ngModel type="number" class="form-control" id="age" name="age">
+
+        <label for="classe">Class Room</label>
+        <input ngModel required type="text" class="form-control" id="classe" name="classe">
+
+
+        <button class="btn btn-primary">
+            Add Student
+        </button>
+    </form>
+</div>
